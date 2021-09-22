@@ -1,1 +1,49 @@
-canvas { border: 1px solid black; }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.character {
+  height: 45px;
+  width: 30px;
+}
+
+.character__sprite {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.platform {
+  background-color: black;
+  height: 10px;
+  width: 50px;
+}
+
+.platform__one {
+  background-color: black;
+  height: 10px;
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+
+.platform__two {
+  background-color: black;
+  height: 10px;
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+}
+
+.gamearea {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border: black solid 2px;
+  border-radius: 2px;
+}
+
+/*# sourceMappingURL=main.css.map */
