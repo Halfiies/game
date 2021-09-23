@@ -1,9 +1,8 @@
-// space invaders
+
 
 //platformer
 
 // BASIC CONTROLS 
-// canvas
 
 
 // player character must exist.
@@ -17,30 +16,29 @@ sprite.style.left ="0px"
 // player character must move with input
 
 // left, right, jump
-document.addEventListener("keydown", function(logkey) {
- console.log(logkey.code)
- if (logkey.code === 'ArrowUp' ){
-  let heightString = sprite.style.bottom.replace('px', '')
-  console.log(heightString);
-  var height = parseInt(heightString, 10)
-  console.log(height)
-  sprite.style.bottom = `${height + 10}px`
- }
- if (logkey.code === "ArrowDown"){
-    let heightString = sprite.style.bottom.replace('px', '')
-    var height = parseInt(heightString, 10)
-    sprite.style.bottom = `${height - 10}px`
- }
- if (logkey.code === "ArrowLeft"){
-  let leftString = sprite.style.left.replace('px', '')
-  console.log(leftString)
-  var left = parseInt(leftString, 10)
-  console.log(left)
-  sprite.style.left = `${left - 10}px`
- }
- if (logkey.code === "ArrowRight"){
-  let leftString = sprite.style.left.replace('px', '')
-  var left = parseInt(leftString, 10)
-  sprite.style.left = `${left + 10}px`
-} else {}
-});
+
+const whichkey = (logkey) => { 
+    if (logkey.code === 'ArrowUp' ){
+     let heightString = sprite.style.bottom.replace('px', '')
+     var height = parseInt(heightString, 10)
+     sprite.style.bottom = `${height + 30}px`
+    }
+    if (logkey.code === "ArrowLeft"){
+     let leftString = sprite.style.left.replace('px', '')
+     var left = parseInt(leftString, 10)
+     sprite.style.left = `${left - 10}px`
+    }
+    if (logkey.code === "ArrowRight"){
+     let leftString = sprite.style.left.replace('px', '')
+     var left = parseInt(leftString, 10)
+     sprite.style.left = `${left + 10}px`
+   } else {}
+   };
+const gravityEffects = () => {
+   let heightString = sprite.style.bottom.replace('px', '')
+   var height = parseInt(heightString, 10)
+   sprite.style.bottom = `${height - 1}px`
+};  
+   document.addEventListener("keydown", whichkey);
+
+let gameInterval = setInterval(gravityEffects, 50)
