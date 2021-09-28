@@ -18,32 +18,13 @@
 
 .platform {
   background-color: black;
-  height: 10px;
-  width: 50px;
-}
-
-.platform__one {
-  background-color: black;
-  height: 10px;
-  width: 200px;
   position: absolute;
-  bottom: 20px;
-  left: 0px;
 }
 
-.platform__two {
-  background-color: black;
-  height: 10px;
-  width: 100px;
-  position: absolute;
-  bottom: 60px;
-  right: 10px;
-}
-
-.gamearea {
+.gameArea {
   position: relative;
   height: 500px;
   width: 500px;
   border: black solid 5px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
