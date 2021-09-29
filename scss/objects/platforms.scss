@@ -1,4 +1,91 @@
-.platform{
-background-color: black;
-position: absolute;
+.platform {
+  &__One{
+    background-color: black;
+    position: absolute;
+    height:10px;
+    width:200px ;
+    bottom:20px ;
+    left:0px ;
+  }
+  &__Two{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width:150px ;
+    bottom:60px ;
+    left: 200px; 
+  }
+  &__Three{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 50px;
+    bottom: 100px;
+    left: 400px;
+  }
+  &__Four{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    bottom: 170px;
+    left: 300px;
+  }
+  &__Five{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 100px;
+    bottom: 170px;
+    left: 70px;
+  }
+  &__Six{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    bottom: 240px;
+    left: 75px;
+  }
+  &__Seven{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    bottom: 300px;
+    left: 100px;
+  }
+  &__Eight{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 40px;
+    bottom: 350px;
+    left: 270px;
+  }
+  &__Nine{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 50px;
+    bottom: 330px;
+    left: 200px;
+  }
+  &__Ten{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    bottom: 300px;
+    left: 100px;
+  }
+  &__Eleven{
+    background-color: black;
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    bottom: 300px;
+    left: 100px;
+  }    
+
 }

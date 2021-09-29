@@ -1,21 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.character {
-  height: 45px;
-  width: 30px;
-  position: absolute;
-}
-
-.character__sprite {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  position: absolute;
-}
-
 .platform__One {
   background-color: black;
   position: absolute;
@@ -77,14 +59,14 @@
   position: absolute;
   height: 10px;
   width: 40px;
-  bottom: 350px;
-  left: 270px;
+  bottom: 300px;
+  left: 150px;
 }
 .platform__Nine {
   background-color: black;
   position: absolute;
   height: 10px;
-  width: 50px;
+  width: 100px;
   bottom: 330px;
   left: 200px;
 }
@@ -103,29 +85,4 @@
   width: 30px;
   bottom: 300px;
   left: 100px;
-}
-
-.gameArea {
-  position: relative;
-  height: 500px;
-  width: 500px;
-  border: black solid 5px;
-  border-radius: 2px;
-  background: red;
-  background: linear-gradient(0deg, red 0%, #ffc053 49%, #ffd7d7 100%);
-}
-
-.goal {
-  height: 24px;
-  width: 24px;
-  position: absolute;
-  bottom: 360px;
-  left: 400px;
-}
-
-.goal__sprite {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  position: absolute;
 }
